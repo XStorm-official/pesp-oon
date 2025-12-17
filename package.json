@@ -1,8 +1,8 @@
 {
-  "name": "org.apache.cordova.hellocordova",
-  "displayName": "PESP OON",
+  "name": "app.peeracom.net",
+  "displayName": "Peer A Com",
   "version": "1.0.0",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": " This is a peer-to-peer communication system based on Espressif boards that operates without the need for a network.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,19 +10,23 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
+  "author": "Louka Di Martino  & Pierre-Louis Lestriez",
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^14.0.1",
+    "cordova-ios": "^8.0.0",
     "cordova-plugin-device": "^3.0.0",
-    "cordova-plugin-splashscreen": "^6.0.2"
+    "cordova-plugin-network-information": "^3.0.0",
+    "cordova-plugin-secure-storage": "^3.0.2"
   },
   "cordova": {
     "plugins": {
       "cordova-plugin-device": {},
-      "cordova-plugin-splashscreen": {}
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-secure-storage": {}
     },
     "platforms": [
+      "ios",
       "android"
     ]
   }
